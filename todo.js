@@ -10,7 +10,8 @@ function initSaveTodo(){
     localStorage.setItem(KEY_TODO, JSON.stringify(todoItmes));
 }
 
-function deleteTodo(e){
+function deleteTodo(e){``
+    console.log('aaa', todoItem);
     const li = e.target.parentElement;
     li.remove();
     todoItmes = todoItmes.filter((element) => element.id !== parseInt(li.id));
@@ -48,6 +49,6 @@ const initTodoItem = localStorage.getItem(KEY_TODO);
 
 if(initTodoItem !== null){
     const parsedTodo = JSON.parse(initTodoItem);
-    totoItem = parsedTodo;
+    todoItem = parsedTodo;
     parsedTodo.forEach(initSetTodo);
 }
