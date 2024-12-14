@@ -1,0 +1,38 @@
+*{box-sizing:border-box}
+html{margin:0;width:100%;height:100%}
+body{ /*height:100%;*/background:#fff;font-family:"Hyundai Sans Head Office", Arial, "TextRegular", Helvetica, "Apple SD Gothic Neo", sans-serif;font-size:16px;font-weight:400;line-height:1.5;color:#000;word-wrap:break-word;word-break:keep-all}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, select, textarea, p, blockquote, th, td, button, figure{margin:0;padding:0}
+section, nav, article, aside, hgroup, header, footer, iframe{display:block}
+form, fieldset, img, input, button{border:0 none;background:none}
+img{margin:0;padding:0;line-height:0;vertical-align:top}
+em{font-style:normal}
+strong{font-weight:600}
+ul, ol, li{list-style:none outside}
+ul:after, ol:after{content:"";display:block;clear:both}
+a:focus, button:focus{outline:1px solid #3a67ff}
+a{text-decoration:none}
+
+body{transition:all 2s;}
+.wrap{padding:150px 0 50px;width:600px;margin:0 auto;position:relative}
+.time{font-size:50px;font-weight:bold;color:#fafafa;text-shadow:0px 0px 10px rgba(0,0,0,.5);text-align:center;}
+.imgDown{position:absolute;right:0;bottom:0}
+.imgDown a{font-size:10px;color:#999;display:block;text-align:right}
+.loginForm{width:100%;margin:50px auto;display:flex;}
+.loginForm .input{background:#fafafa;border-radius:3px;font-size:26px;height:45px;line-height:45px;padding:0 0 0 15px;flex:1;color:#333;box-shadow:0 0 5px rgba(0,0,0,.5)}
+.loginForm .btnLogin{background:#f5b342;height:45px;flex:0 0 120px;text-align:center;display:inline-block;margin-left:20px;color:#fff;font-weight:bold;box-shadow:0 0 5px rgba(0,0,0,.5);text-transform:uppercase;font-size:24px;letter-spacing:-1px}
+.hidden{display:none}
+.userName{font-size:35px;color:#fffbb0;font-weight:bold;text-align:center;margin-top:50px;text-align:center;text-shadow:0px 5px 5px rgba(0,0,0,.5);}
+.todoForm{width:600px;margin:50px auto;}
+.todoForm .input{width:100%;height:50px;background:#fafafa;line-height:50px;border-radius:3px;padding:0 0 0 20px;color:#333;font-size:24px;box-shadow:0 0 5px rgba(0,0,0,.5)}
+.todoWrap{width:600px;margin:50px auto;background:#fafafa;padding:20px}
+.todoWrap strong{display:block;font-size:26px;color:#333;border-bottom:1px dashed #333;line-height:40px;padding:10px 0}
+.todoWrap{width:600px;margin:50px auto;background:#fafafa;padding:20px;box-shadow:0 0 5px rgba(0,0,0,.5)}
+.todoList li{line-height:32px;font-size:14px;border-bottom:1px dashed #333;counter-increment:step-counter;display:flex;padding:5px 15px}
+.todoList li:before{display:inline-block;content:counter(step-counter)'.';margin-right:8px}
+.todoList li span{flex:1}
+.todoList li button{display:inline-block;position:relative;flex:0 0 30px;height:30px;vertical-align:top;cursor:pointer}
+.todoList li button:before,
+.todoList li button:after{position:absolute;content:' ';height:20px;width:2px;background-color:#000;left:13px;top:5px}
+.todoList li button:before{transform:rotate(45deg)}
+.todoList li button:after{transform:rotate(-45deg)}
+.util{position:absolute;top:10px;right:0;color:#494bab;font-size:20px;text-shadow:0 0 10px rgba(0,0,0,.5);}
