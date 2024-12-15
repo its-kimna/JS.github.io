@@ -40,9 +40,11 @@ body{transition:all 2s;}
     body{background-size:auto auto !important}
     .wrap{width:100%;padding-left:30px;padding-right:30px}
     .util{margin-right:20px}
-    .todoForm .input, .loginForm .input{font-size:20px;line-height:30px;height:30px}
+    .todoForm .input, .loginForm .input{font-size:16px;line-height:30px;height:30px}
     .loginForm .btnLogin{font-size:20px;line-height:30px;height:30px;flex:0 0 60px;font-size:18px;margin-left:10px}
     .todoForm, .loginForm, .todoWrap{margin:30px auto}
     .userName{margin-top:30px}
     .todoWrap strong{font-size:22px;padding:0;}
+    .time{font-size:35px}
+    .util{font-size:15px}
 }
