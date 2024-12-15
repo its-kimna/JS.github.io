@@ -22,11 +22,10 @@ body{transition:all 2s;}
 .loginForm .btnLogin{background:#f5b342;height:45px;flex:0 0 120px;text-align:center;display:inline-block;margin-left:20px;color:#fff;font-weight:bold;box-shadow:0 0 5px rgba(0,0,0,.5);text-transform:uppercase;font-size:24px;letter-spacing:-1px}
 .hidden{display:none}
 .userName{font-size:35px;color:#fffbb0;font-weight:bold;text-align:center;margin-top:50px;text-align:center;text-shadow:0px 5px 5px rgba(0,0,0,.5);}
-.todoForm{width:600px;margin:50px auto;}
+.todoForm{width:100%;margin:50px auto;}
 .todoForm .input{width:100%;height:50px;background:#fafafa;line-height:50px;border-radius:3px;padding:0 0 0 20px;color:#333;font-size:24px;box-shadow:0 0 5px rgba(0,0,0,.5)}
-.todoWrap{width:600px;margin:50px auto;background:#fafafa;padding:20px}
 .todoWrap strong{display:block;font-size:26px;color:#333;border-bottom:1px dashed #333;line-height:40px;padding:10px 0}
-.todoWrap{width:600px;margin:50px auto;background:#fafafa;padding:20px;box-shadow:0 0 5px rgba(0,0,0,.5)}
+.todoWrap{width:100%;margin:50px auto;background:#fafafa;padding:20px;box-shadow:0 0 5px rgba(0,0,0,.5)}
 .todoList li{line-height:32px;font-size:14px;border-bottom:1px dashed #333;counter-increment:step-counter;display:flex;padding:5px 15px}
 .todoList li:before{display:inline-block;content:counter(step-counter)'.';margin-right:8px}
 .todoList li span{flex:1}
@@ -35,4 +34,15 @@ body{transition:all 2s;}
 .todoList li button:after{position:absolute;content:' ';height:20px;width:2px;background-color:#000;left:13px;top:5px}
 .todoList li button:before{transform:rotate(45deg)}
 .todoList li button:after{transform:rotate(-45deg)}
-.util{position:absolute;top:10px;right:0;color:#494bab;font-size:20px;text-shadow:0 0 10px rgba(0,0,0,.5);}
+.util{position:absolute;top:10px;right:0;color:#494bab;font-size:20px;text-shadow:0 0 10px rgba(0,0,0,.5)}
+
+@media (max-width:600px) {
+    body{background-size:auto auto !important}
+    .wrap{width:100%;padding-left:30px;padding-right:30px}
+    .util{margin-right:20px}
+    .todoForm .input, .loginForm .input{font-size:20px;line-height:30px;height:30px}
+    .loginForm .btnLogin{font-size:20px;line-height:30px;height:30px;width:70px}
+    .todoForm, .loginForm, .todoWrap{margin:30px auto}
+    .userName{margin-top:30px}
+    .todoWrap strong{font-size:22px;padding:0;}
+}
