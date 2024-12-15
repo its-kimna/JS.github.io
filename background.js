@@ -5,7 +5,7 @@ function initRangomBg(){
 
     const bgImg = bgImgs[Math.floor(Math.random() * bgImgs.length)];
     
-    body.style.background = `url(img/${bgImg}.jpg) no-repeat 50% 0`
+    body.style.background = `url(img/${bgImg}.jpg) no-repeat 50% 0/100% auto`
 }
 
 initRangomBg();
